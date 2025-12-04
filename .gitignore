@@ -1,0 +1,9 @@
+# Binaries (deployed via releases, not committed)
+bin/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
