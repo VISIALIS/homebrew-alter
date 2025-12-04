@@ -1,13 +1,13 @@
 class AlterCli < Formula
   desc "CLI tool for blockchain address classification and analysis"
   homepage "https://github.com/VISIALIS/phoenix_0"
-  version "0.0.0" # Updated automatically by CD
+  version "1.0.26" # Updated automatically by CD
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/VISIALIS/alter-brew/releases/download/v0.0.0/alter-cli-macos-arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000" # Updated automatically by CD
+      url "https://github.com/VISIALIS/alter-brew/releases/download/v1.0.26/alter-cli-macos-arm64.tar.gz"
+      sha256 "bf1c20450f023decd0bb0da8658e88d9d0dbb5c9e2592eaaf15dcadf23a302b2" # Updated automatically by CD
     end
   end
 
