@@ -65,6 +65,40 @@ brew uninstall alter-cli alter-mcp
 brew untap VISIALIS/alter
 ```
 
+## Troubleshooting
+
+### Checksum mismatch error
+
+If you encounter a checksum error during installation:
+
+```
+Error: Formula reports different checksum: ...
+```
+
+This happens when Homebrew has cached an old version of the formula. Fix it by updating the tap first:
+
+```bash
+brew update
+brew reinstall alter-cli alter-mcp
+```
+
+### Version mismatch after update
+
+If `--version` shows an old version after upgrading, force a reinstall:
+
+```bash
+brew reinstall alter-cli alter-mcp
+```
+
+### Clear Homebrew cache
+
+For persistent issues, clear the download cache:
+
+```bash
+brew cleanup -s alter-cli alter-mcp
+brew reinstall alter-cli alter-mcp
+```
+
 ## About Alter
 
 Alter is a blockchain address classification tool using Domain-Driven Design principles.
