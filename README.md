@@ -290,7 +290,7 @@ Built on clean architecture principles:
 
 ### Links
 
-- **Source**: [VISIALIS/phoenix_0](https://github.com/VISIALIS/phoenix_0) (private)
+- **Source**: [VISIALIS](https://github.com/VISIALIS) (private repositories)
 - **Homebrew Tap**: [VISIALIS/homebrew-alter](https://github.com/VISIALIS/homebrew-alter)
 - **Issues**: [Report a bug](https://github.com/VISIALIS/homebrew-alter/issues)
 
