@@ -270,23 +270,21 @@ If your AI client shows "Transport closed" or connection errors:
 
 ## About Alter
 
-Alter is a professional blockchain address classification toolkit built with Domain-Driven Design principles.
+**Alter answers the question: "What is this blockchain address?"**
 
-### Features
+When analyzing DeFi transactions, auditing smart contracts, or investigating on-chain activity, you need to quickly identify what you're looking at. Is it a wallet? A token contract? A multisig? A bridge?
 
-- **Multi-chain support**: Ethereum, Gnosis Chain (more coming)
-- **Smart classification**: Detects wallets, contracts, tokens (ERC-20, ERC-721, ERC-1155), proxies, multisigs, bridges, and more
-- **Token trait detection**: Identifies wrapped, rebasing, governed, pegged, and other token behaviors
-- **Optimized RPC calls**: Uses Multicall3 for batch operations (up to 200 addresses per request)
-- **AI-ready**: MCP server for seamless integration with AI assistants
+Alter classifies any EVM address and tells you:
 
-### Architecture
+- **What it is**: Wallet, contract, ERC-20 token, NFT collection, proxy, multisig, bridge protocol, DEX...
+- **What it does**: For tokens, detects behaviors like rebasing, wrapping, governance, transfer restrictions
+- **Where it exists**: Multi-chain support (Ethereum, Gnosis Chain, more coming)
 
-Built on clean architecture principles:
-- **Domain layer**: Business rules and entities
-- **Application layer**: Use cases and coordinators
-- **Infrastructure layer**: RPC clients, caching, load balancing
-- **Presentation layer**: CLI and MCP server
+### Why Alter?
+
+- **Speed**: Batch classify hundreds of addresses in seconds
+- **Accuracy**: Deep inspection of bytecode and on-chain state
+- **Integration**: Works with your AI assistant via MCP, or standalone via CLI
 
 ### Links
 
