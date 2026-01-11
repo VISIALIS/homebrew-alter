@@ -1,6 +1,6 @@
 cask "alter" do
-  version "1.0.32"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  version "1.0.36"
+  sha256 "a19db65297edf41584ab13816e5d1364baaf0a73bd1883886223ca2afaadf36c"
 
   url "https://github.com/VISIALIS/phoenix_0/releases/download/v#{version}/Alter-#{version}-macOS-Notarized.dmg"
   name "Alter"
@@ -11,6 +11,8 @@ cask "alter" do
     url :url
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
+
+  app "Alter.app"
 
   # Detection App Store version (skip si CI/automation)
   preflight do
@@ -25,16 +27,14 @@ cask "alter" do
     end
   end
 
-  app "Alter.app"
-
   zap trash: [
+    "~/.alter",
     "~/Library/Application Support/com.visialis.alter",
     "~/Library/Caches/com.visialis.alter",
     "~/Library/HTTPStorages/com.visialis.alter",
     "~/Library/Logs/com.visialis.alter",
     "~/Library/Preferences/com.visialis.alter.plist",
     "~/Library/Saved Application State/com.visialis.alter.savedState",
-    "~/.alter",
   ]
 
   caveats <<~EOS
