@@ -1,13 +1,26 @@
 class AlterCli < Formula
-  desc "CLI tool for blockchain address classification and analysis"
+  desc "Multi-chain EVM address classifier CLI for developers and automation pipelines"
   homepage "https://github.com/VISIALIS/phoenix_0"
-  version "1.0.32" # Updated automatically by CD
+  version "1.0.32"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.32/alter-cli-macos-arm64.tar.gz"
-      sha256 "e5124b0559af56a3295fe72419e8a51f1f4e036bc5c014472f78996df3d84e9b" # Updated automatically by CD
+      url "https://github.com/VISIALIS/homebrew-alter/releases/download/v#{version}/alter-cli-macos-arm64.tar.gz"
+      sha256 "MACOS_ARM64_SHA256_PLACEHOLDER"
+    else
+      url "https://github.com/VISIALIS/homebrew-alter/releases/download/v#{version}/alter-cli-macos-x64.tar.gz"
+      sha256 "MACOS_X64_SHA256_PLACEHOLDER"
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.arm?
+      url "https://github.com/VISIALIS/homebrew-alter/releases/download/v#{version}/alter-cli-linux-arm64.tar.gz"
+      sha256 "LINUX_ARM64_SHA256_PLACEHOLDER"
+    else
+      url "https://github.com/VISIALIS/homebrew-alter/releases/download/v#{version}/alter-cli-linux-x64.tar.gz"
+      sha256 "LINUX_X64_SHA256_PLACEHOLDER"
     end
   end
 
