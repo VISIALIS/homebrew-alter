@@ -14,6 +14,17 @@ body:
         - Alter Desktop
     validations:
       required: true
+  - type: dropdown
+    id: canal
+    attributes:
+      label: Canal d usage
+      options:
+        - Agent IA
+        - Terminal
+        - Interface graphique
+        - Autre
+    validations:
+      required: true
   - type: input
     id: systeme
     attributes:
@@ -41,3 +52,4 @@ body:
       label: Essais effectues
     validations:
       required: false
+

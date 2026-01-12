@@ -15,6 +15,17 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: canal
+    attributes:
+      label: Canal d usage
+      options:
+        - Agent IA
+        - Terminal
+        - Interface graphique
+        - Autre
+    validations:
+      required: true
+  - type: dropdown
     id: profil
     attributes:
       label: Profil
@@ -58,3 +69,4 @@ body:
       label: Suggestion d amelioration
     validations:
       required: false
+
