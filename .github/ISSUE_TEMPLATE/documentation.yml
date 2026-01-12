@@ -1,0 +1,35 @@
+name: Documentation
+description: Corriger ou completer la documentation
+title: "[Documentation] "
+labels:
+  - documentation
+body:
+  - type: dropdown
+    id: source
+    attributes:
+      label: Source Alter
+      options:
+        - Alter CLI
+        - Alter MCP
+        - Alter Desktop
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page ou fichier concerne
+      description: "Exemple: README, guide d installation, etc."
+    validations:
+      required: true
+  - type: textarea
+    id: probleme
+    attributes:
+      label: Probleme constate
+    validations:
+      required: true
+  - type: textarea
+    id: proposition
+    attributes:
+      label: Proposition de correction
+    validations:
+      required: false

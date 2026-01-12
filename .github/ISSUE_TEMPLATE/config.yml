@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Retour utilisateur par courriel
+    url: mailto:alter@visialis.fr
+    about: Envoyer un retour court si vous ne souhaitez pas ouvrir un ticket.

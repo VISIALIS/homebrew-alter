@@ -1,0 +1,43 @@
+name: Installation
+description: Probleme d installation ou de mise a jour
+title: "[Installation] "
+labels:
+  - question
+body:
+  - type: dropdown
+    id: source
+    attributes:
+      label: Source Alter
+      options:
+        - Alter CLI
+        - Alter MCP
+        - Alter Desktop
+    validations:
+      required: true
+  - type: input
+    id: systeme
+    attributes:
+      label: Systeme et version
+      description: "Exemple: macOS 15.1, Ubuntu 24.04"
+    validations:
+      required: true
+  - type: input
+    id: commande
+    attributes:
+      label: Commande utilisee
+      description: "Exemple: brew install alter"
+    validations:
+      required: true
+  - type: textarea
+    id: erreur
+    attributes:
+      label: Message d erreur
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: essais
+    attributes:
+      label: Essais effectues
+    validations:
+      required: false

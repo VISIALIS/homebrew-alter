@@ -1,0 +1,60 @@
+name: Retour utilisateur
+description: Partager un retour d usage ou une suggestion non technique
+title: "[Retour] "
+labels:
+  - question
+body:
+  - type: dropdown
+    id: source
+    attributes:
+      label: Source Alter
+      options:
+        - Alter CLI
+        - Alter MCP
+        - Alter Desktop
+    validations:
+      required: true
+  - type: dropdown
+    id: profil
+    attributes:
+      label: Profil
+      options:
+        - Marketeur DAO
+        - Analyste
+        - Conformite
+        - Support
+        - Produit
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: objectif
+    attributes:
+      label: Objectif
+      description: "Que vouliez vous obtenir ?"
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Resultat attendu
+    validations:
+      required: true
+  - type: textarea
+    id: obtenu
+    attributes:
+      label: Resultat obtenu
+    validations:
+      required: true
+  - type: textarea
+    id: difficulte
+    attributes:
+      label: Difficulte rencontree
+    validations:
+      required: false
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggestion d amelioration
+    validations:
+      required: false

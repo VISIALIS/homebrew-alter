@@ -1,0 +1,74 @@
+name: Anomalie
+description: Signaler un probleme reproductible
+title: "[Anomalie] "
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: source
+    attributes:
+      label: Source Alter
+      options:
+        - Alter CLI
+        - Alter MCP
+        - Alter Desktop
+    validations:
+      required: true
+  - type: dropdown
+    id: canal
+    attributes:
+      label: Canal d usage
+      options:
+        - Agent IA
+        - Terminal
+        - Interface graphique
+        - Autre
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version ou commit
+      description: "Exemple: 0.1.0 ou commit"
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description courte
+      description: "Que se passe-t-il ?"
+    validations:
+      required: true
+  - type: textarea
+    id: etapes
+    attributes:
+      label: Etapes pour reproduire
+      placeholder: "1. ...\n2. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Resultat attendu
+    validations:
+      required: true
+  - type: textarea
+    id: obtenu
+    attributes:
+      label: Resultat obtenu
+    validations:
+      required: true
+  - type: textarea
+    id: contexte_mcp
+    attributes:
+      label: Contexte MCP (si applicable)
+      description: "Client MCP, tool, request_id, networks, detail_level, format, variables env"
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs ou extrait pertinent
+      render: text
+    validations:
+      required: false

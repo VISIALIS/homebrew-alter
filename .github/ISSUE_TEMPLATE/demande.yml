@@ -1,0 +1,43 @@
+name: Demande d amelioration
+description: Proposer une evolution ou une nouvelle capacite
+title: "[Demande] "
+labels:
+  - enhancement
+body:
+  - type: dropdown
+    id: source
+    attributes:
+      label: Source Alter
+      options:
+        - Alter CLI
+        - Alter MCP
+        - Alter Desktop
+    validations:
+      required: true
+  - type: textarea
+    id: besoin
+    attributes:
+      label: Besoin utilisateur
+      description: "Quel probleme voulez vous resoudre ?"
+    validations:
+      required: true
+  - type: textarea
+    id: valeur
+    attributes:
+      label: Valeur attendue
+      description: "Pourquoi cette demande est utile ?"
+    validations:
+      required: true
+  - type: textarea
+    id: proposition
+    attributes:
+      label: Proposition de solution
+      description: "Si vous avez une idee de solution, decrivez la."
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives ou contournements
+    validations:
+      required: false
