@@ -39,6 +39,18 @@ jobs:
               '[Installation]': 'type:installation',
               '[Retour]': 'type:retour',
             };
+            const canalLabelsToRemove = [
+              'canal:agent-ia',
+              'canal:terminal',
+              'canal:interface-graphique',
+              'canal:autre',
+            ];
+            const canalLabelMap = {
+              'Agent IA': 'canal:agent-ia',
+              'Terminal': 'canal:terminal',
+              'Interface graphique': 'canal:interface-graphique',
+              'Autre': 'canal:autre',
+            };
             const issue = context.payload.issue;
             if (!issue) {
               return;
@@ -99,5 +111,33 @@ jobs:
                   issue_number: issue.number,
                   labels: [labelToAdd],
                 });
+              }
+            }
+
+            const canalValueLineIndex = lines.findIndex((line) =>
+              line.startsWith('### Canal d usage'),
+            );
+            if (canalValueLineIndex >= 0) {
+              const canalValue = lines[canalValueLineIndex + 2]?.trim();
+              const labelToAdd = canalLabelMap[canalValue];
+              if (labelToAdd) {
+                for (const label of canalLabelsToRemove) {
+                  if (existingLabels.includes(label)) {
+                    await github.rest.issues.removeLabel({
+                      owner: context.repo.owner,
+                      repo: context.repo.repo,
+                      issue_number: issue.number,
+                      name: label,
+                    }).catch(() => {});
+                  }
+                }
+                if (!existingLabels.includes(labelToAdd)) {
+                  await github.rest.issues.addLabels({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: issue.number,
+                    labels: [labelToAdd],
+                  });
+                }
               }
             }
