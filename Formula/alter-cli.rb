@@ -8,14 +8,14 @@ class AlterCli < Formula
     url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.37/alter-cli-macos-arm64.tar.gz"
     if Hardware::CPU.arm?
     end
-    sha256 "a986bf67f7478c37cad660b30437ea2d1188a62e3b50d1ca68924e460bcb03de"
+    sha256 "b13812d68f44a6d7a57cb997b0284ac1732fb5cadf05e150bf31eccaa91f2dcd"
   end
 
   on_linux do
     url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.37/alter-cli-macos-arm64.tar.gz"
     if Hardware::CPU.arm?
     end
-    sha256 "a986bf67f7478c37cad660b30437ea2d1188a62e3b50d1ca68924e460bcb03de"
+    sha256 "b13812d68f44a6d7a57cb997b0284ac1732fb5cadf05e150bf31eccaa91f2dcd"
   end
 
   def install
