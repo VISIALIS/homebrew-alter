@@ -1,21 +1,21 @@
 class AlterCli < Formula
   desc "Multi-chain EVM address classifier CLI for developers and automation pipelines"
   homepage "https://github.com/VISIALIS/phoenix_0"
-  version "1.0.36"
+  version "1.0.37"
   license "MIT"
 
   on_macos do
-    url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.36/alter-cli-macos-arm64.tar.gz"
+    url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.37/alter-cli-macos-arm64.tar.gz"
     if Hardware::CPU.arm?
     end
-    sha256 "db01ff2f6aff2da3e9740ebf0305c71ea4f5da1802af1c3034049b4ae88d4828"
+    sha256 "a986bf67f7478c37cad660b30437ea2d1188a62e3b50d1ca68924e460bcb03de"
   end
 
   on_linux do
-    url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.36/alter-cli-macos-arm64.tar.gz"
+    url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.37/alter-cli-macos-arm64.tar.gz"
     if Hardware::CPU.arm?
     end
-    sha256 "db01ff2f6aff2da3e9740ebf0305c71ea4f5da1802af1c3034049b4ae88d4828"
+    sha256 "a986bf67f7478c37cad660b30437ea2d1188a62e3b50d1ca68924e460bcb03de"
   end
 
   def install
