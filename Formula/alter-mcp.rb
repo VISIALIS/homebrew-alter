@@ -8,14 +8,14 @@ class AlterMcp < Formula
     url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.37/alter-mcp-macos-arm64.tar.gz"
     if Hardware::CPU.arm?
     end
-    sha256 "1f559c7fbd48260d93f6f78f522d3a96eb87c75538a10de10fa54baef3d5da4b"
+    sha256 "2078b1907789215c35e9d77b60e87aa9c7665cb5ea3ab2e2cb29dd4c46a3a74e"
   end
 
   on_linux do
     url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.37/alter-mcp-macos-arm64.tar.gz"
     if Hardware::CPU.arm?
     end
-    sha256 "1f559c7fbd48260d93f6f78f522d3a96eb87c75538a10de10fa54baef3d5da4b"
+    sha256 "2078b1907789215c35e9d77b60e87aa9c7665cb5ea3ab2e2cb29dd4c46a3a74e"
   end
 
   def install
