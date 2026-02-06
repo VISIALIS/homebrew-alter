@@ -1,58 +1,16 @@
 cask "alter" do
-  version "1.0.38"
-  sha256 "b58acf920c0fd6e45a14a1a8a032de2c061262f19012cedf3ec19dedefe4736e"
+  version "1.0.39"
+  sha256 "2e9d3efcb7db86586d47442f99946a6cf37351caba134d63ae9d7bddf972cf26"
 
-  url "https://github.com/VISIALIS/homebrew-alter/releases/download/v#{version}/Alter-#{version}-macOS-Notarized.dmg"
+  url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.39/Alter-1.0.39-macOS-Notarized.dmg"
   name "Alter"
-  desc "Discover the story behind blockchain addresses through visual exploration and relationship mapping"
+  desc "Multi-chain EVM address classification desktop app"
   homepage "https://github.com/VISIALIS/phoenix_0"
-
-  livecheck do
-    url :url
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
-  end
 
   app "Alter.app"
 
-  # Detection App Store version (skip si CI/automation)
-  preflight do
-    unless ENV["ALTER_SKIP_CONFLICT_CHECK"]
-      appstore_receipt = "/Applications/Alter.app/Contents/_MASReceipt/receipt"
-      if File.exist?(appstore_receipt)
-        opoo "Mac App Store version detected at /Applications/Alter.app"
-        opoo "It will be replaced by the Homebrew Cask version."
-        opoo "Press Ctrl+C to cancel, or wait 3 seconds to continue..."
-        sleep 3
-      end
-    end
-  end
-
   zap trash: [
-    "~/.alter",
     "~/Library/Application Support/com.visialis.alter",
-    "~/Library/Caches/com.visialis.alter",
-    "~/Library/HTTPStorages/com.visialis.alter",
-    "~/Library/Logs/com.visialis.alter",
     "~/Library/Preferences/com.visialis.alter.plist",
-    "~/Library/Saved Application State/com.visialis.alter.savedState",
   ]
-
-  caveats <<~EOS
-    Installation Conflict Warning
-
-    This Homebrew Cask version conflicts with the Mac App Store version.
-    Both install to: /Applications/Alter.app
-
-    Choose ONE installation method:
-    - Homebrew: brew upgrade alter
-    - App Store: Automatic updates
-
-    For detailed instructions on switching between versions, see:
-    https://github.com/VISIALIS/homebrew-alter#installation-conflicts
-
-    Check your installation source:
-      codesign -dv /Applications/Alter.app 2>&1 | grep Authority
-      - "Apple Distribution" = App Store version
-      - "Developer ID Application" = Homebrew version
-  EOS
 end
