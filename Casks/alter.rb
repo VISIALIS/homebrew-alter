@@ -1,6 +1,6 @@
 cask "alter" do
   version "1.0.40"
-  sha256 "b255d89032228c996e442381aa09ebc0583dc0ffcc1e93f54554b3d2c38d1ac3"
+  sha256 "063c79e0a1499e0d2538099474cbb28d0f55afa90383367ebd145b017f73fab6"
 
   url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.40/Alter-1.0.40-macOS-Notarized.dmg"
   name "Alter"

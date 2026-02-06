@@ -7,22 +7,22 @@ class AlterMcp < Formula
   on_macos do
     on_arm do
       url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.40/alter-mcp-macos-arm64.tar.gz"
-      sha256 "e5002003103fd772572b6c31befc3fa43fcacb8b4468a03958d482e8a8ee7a8b"
+      sha256 "9dbce4198a37e861c42104012a541974281d452ca5b4e177d03fc12ca9d32de3"
     end
     on_intel do
       url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.40/alter-mcp-macos-x64.tar.gz"
-      sha256 "7c5dc03ff62da5740cb890ed1ac6316e20b1333860f186fdee9aa3b451aa4bc8"
+      sha256 "70357374ab392e6367a4cd261ecec102ce06e0e8b78a0ff7aed4d143cc2933d8"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.40/alter-mcp-linux-arm64.tar.gz"
-      sha256 "22bd5febba203b83f18a330cb0a3346c51ab22bf4ee30adeca6fd6cfe4ceb829"
+      sha256 "a7911bcf104e2b5728978f84f80afaf8c142a8364b790c8208030983a17b950d"
     end
     on_intel do
       url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.40/alter-mcp-linux-x64.tar.gz"
-      sha256 "eb2045d92ebd99ee8738c17bd624908521687b8a953456e74d1177d6f0bb9751"
+      sha256 "ab19479b1d5fa131152cfec8a6dc33c9a8e914f70d97c362c0bb2933726e4296"
     end
   end
 

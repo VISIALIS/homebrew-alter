@@ -7,22 +7,22 @@ class AlterCli < Formula
   on_macos do
     on_arm do
       url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.40/alter-cli-macos-arm64.tar.gz"
-      sha256 "e02f0086f3d7809e137e9c2fd6c5c0cf43fa31c7de0488a4fc13f22ce63cb36e"
+      sha256 "8dda73cd22baad939de673b345797a722868fd0c4af3b67f3b3b19d573a70ab9"
     end
     on_intel do
       url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.40/alter-cli-macos-x64.tar.gz"
-      sha256 "3f70e954de54eb30d5d5f144132d72391f2b1a565cb7515587d47276d02015d0"
+      sha256 "72bf2f7edaa0f75b92c021734eac3049439edda8a07d2654e82c4f8a50a3c0a8"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.40/alter-cli-linux-arm64.tar.gz"
-      sha256 "e45e5c36928d29ca7e82a6db62beae8d43e0ad8d89929076d4d573c361aef179"
+      sha256 "6c9c4d720d2429826a90367bf79383884e64a71758630662d516d625e60221e7"
     end
     on_intel do
       url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.40/alter-cli-linux-x64.tar.gz"
-      sha256 "63f15de56daaf1243fb7b9cc358cd116cc18c07f2e5e7c5708992721341ad9b8"
+      sha256 "a9c6019e9246437f82da6da0033568aa211b241a70420d280015c48f7b90ff5f"
     end
   end
 
