@@ -1,21 +1,21 @@
 class AlterMcp < Formula
   desc "Multi-chain EVM address classifier MCP server for AI agent integration"
   homepage "https://github.com/VISIALIS/phoenix_0"
-  version "1.0.37"
+  version "1.0.38"
   license "MIT"
 
   on_macos do
-    url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.37/alter-mcp-macos-arm64.tar.gz"
+    url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.38/alter-mcp-macos.tar.gz"
     if Hardware::CPU.arm?
     end
-    sha256 "2078b1907789215c35e9d77b60e87aa9c7665cb5ea3ab2e2cb29dd4c46a3a74e"
+    sha256 "bbe600efc221bdee3e747274e008f51b88b6b54e52a5996fb4fff18767d6d4b0"
   end
 
   on_linux do
-    url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.37/alter-mcp-macos-arm64.tar.gz"
+    url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.0.38/alter-mcp-macos.tar.gz"
     if Hardware::CPU.arm?
     end
-    sha256 "2078b1907789215c35e9d77b60e87aa9c7665cb5ea3ab2e2cb29dd4c46a3a74e"
+    sha256 "bbe600efc221bdee3e747274e008f51b88b6b54e52a5996fb4fff18767d6d4b0"
   end
 
   def install
