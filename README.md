@@ -30,8 +30,9 @@ Command-line address classifier for developers.
 brew install alter-cli
 
 # Usage
-alter-cli classify 0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb
-alter-cli classify --batch addresses.txt --format json
+alter-cli -a 0x742d35Cc6634C0532925a3b844Bc454e4438f44e
+alter-cli -a 0x742d... -a 0xa0Ee... --batch -f json
+alter-cli --file addresses.txt -n ethereum -f csv -o results.csv
 ```
 
 ### MCP Server
@@ -54,6 +55,37 @@ Configure Claude Desktop (`~/Library/Application Support/Claude/claude_desktop_c
   }
 }
 ```
+
+Configure Claude Code (`.mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "alter": {
+      "command": "/opt/homebrew/bin/alter-mcp",
+      "args": []
+    }
+  }
+}
+```
+
+## Current Release
+
+**Version: 1.0.42**
+
+| Artifact | Platform | Architecture |
+|----------|----------|-------------|
+| `Alter-1.0.42-macOS-Notarized.dmg` | macOS | Universal |
+| `alter-cli-macos-arm64.tar.gz` | macOS | Apple Silicon |
+| `alter-cli-macos-x64.tar.gz` | macOS | Intel |
+| `alter-cli-linux-arm64.tar.gz` | Linux | ARM64 |
+| `alter-cli-linux-x64.tar.gz` | Linux | x64 |
+| `alter-mcp-macos-arm64.tar.gz` | macOS | Apple Silicon |
+| `alter-mcp-macos-x64.tar.gz` | macOS | Intel |
+| `alter-mcp-linux-arm64.tar.gz` | Linux | ARM64 |
+| `alter-mcp-linux-x64.tar.gz` | Linux | x64 |
+
+All artifacts are available on the [Releases page](https://github.com/VISIALIS/homebrew-alter/releases).
 
 ## Update
 
@@ -80,6 +112,20 @@ brew cleanup
 
 ## Troubleshooting
 
+**"No developer tools installed" after `brew install`**: This warning comes from Homebrew itself, not from Alter. It does **not** affect the installation. Your app/CLI is correctly installed. To suppress it:
+
+```bash
+xcode-select --install
+```
+
+**`kMDItemVersion` returns null for Alter.app**: This is a Spotlight indexing delay, not a missing version. The version is correctly set in `Info.plist`:
+
+```bash
+# Verify version directly
+defaults read /Applications/Alter.app/Contents/Info.plist CFBundleShortVersionString
+# Expected: 1.0.42
+```
+
 **Desktop conflicts with App Store version**: Uninstall one before installing the other.
 
 ```bash
@@ -93,6 +139,12 @@ codesign -dv /Applications/Alter.app 2>&1 | grep Authority
 ```bash
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
 source ~/.bashrc
+```
+
+**Broken system Homebrew (Ruby crash, permission errors)**: If your system Homebrew is corrupted, reinstall it:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ## Support
