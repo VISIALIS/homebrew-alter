@@ -1,20 +1,33 @@
 # Homebrew Alter
 
-Official Homebrew tap for Alter - Multi-chain EVM address intelligence.
+Official Homebrew tap for **Alter** — Multi-chain EVM address intelligence.
 
-## Install
+## 3 Products Available
+
+| # | Product | Type | Install command |
+|---|---------|------|-----------------|
+| 1 | **Alter Desktop** | Cask (macOS app) | `brew install --cask alter` |
+| 2 | **alter-cli** | Formula (CLI tool) | `brew install alter-cli` |
+| 3 | **alter-mcp** | Formula (MCP server) | `brew install alter-mcp` |
+
+> The Desktop app is a **Cask** (in `Casks/`). The CLI and MCP server are **Formulas** (in `Formula/`).
+> All three are installed separately — pick what you need.
+
+## Quick Start
 
 ```bash
+# 1. Add the tap
 brew tap VISIALIS/alter
 
-brew install --cask alter    # Desktop app (macOS)
-brew install alter-cli       # CLI (macOS/Linux)
-brew install alter-mcp       # MCP server for Claude
+# 2. Install what you need
+brew install --cask alter    # Desktop app (macOS only)
+brew install alter-cli       # CLI (macOS + Linux)
+brew install alter-mcp       # MCP server for Claude (macOS + Linux)
 ```
 
 ## Products
 
-### Desktop
+### Alter Desktop
 
 Visual blockchain address explorer for macOS.
 
@@ -22,7 +35,7 @@ Visual blockchain address explorer for macOS.
 brew install --cask alter
 ```
 
-### CLI
+### alter-cli
 
 Command-line address classifier for developers.
 
@@ -33,9 +46,10 @@ brew install alter-cli
 alter-cli -a 0x742d35Cc6634C0532925a3b844Bc454e4438f44e
 alter-cli -a 0x742d... -a 0xa0Ee... --batch -f json
 alter-cli --file addresses.txt -n ethereum -f csv -o results.csv
+alter-cli --help
 ```
 
-### MCP Server
+### alter-mcp
 
 Model Context Protocol server for Claude AI integration.
 
@@ -126,6 +140,8 @@ defaults read /Applications/Alter.app/Contents/Info.plist CFBundleShortVersionSt
 # Expected: 1.0.42
 ```
 
+**"Only 1 cask found"**: The tap contains 3 products across 2 directories. Use `brew search alter` after `brew tap VISIALIS/alter` to see all available packages. If your Homebrew installation has issues, try reinstalling it first (see below).
+
 **Desktop conflicts with App Store version**: Uninstall one before installing the other.
 
 ```bash
@@ -149,4 +165,5 @@ source ~/.bashrc
 
 ## Support
 
-Report issues at [github.com/VISIALIS/homebrew-alter/issues](https://github.com/VISIALIS/homebrew-alter/issues)
+- Report issues: [github.com/VISIALIS/homebrew-alter/issues](https://github.com/VISIALIS/homebrew-alter/issues)
+- Project source: [github.com/VISIALIS/phoenix_0](https://github.com/VISIALIS/phoenix_0)
