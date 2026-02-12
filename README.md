@@ -2,15 +2,17 @@
 
 Official Homebrew tap for **Alter** — Multi-chain EVM address intelligence.
 
-## 3 Products Available
+## Alter Ecosystem
 
-| # | Product | Type | Install command |
-|---|---------|------|-----------------|
-| 1 | **Alter Desktop** | Cask (macOS app) | `brew install --cask alter` |
-| 2 | **alter-cli** | Formula (CLI tool) | `brew install alter-cli` |
-| 3 | **alter-mcp** | Formula (MCP server) | `brew install alter-mcp` |
+| # | Interface | Type | Access |
+|---|-----------|------|--------|
+| 1 | **Alter Desktop** | macOS application | `brew install --cask alter` |
+| 2 | **alter-cli** | Interactive CLI | `brew install alter-cli` |
+| 3 | **alter-mcp** | MCP server (AI agents) | `brew install alter-mcp` |
+| 4 | **Alter Web** | Web application | [alter.visialis.fr](https://alter.visialis.fr/) |
+| 5 | **Alter Mobile** | Mobile app (iOS/Android) | [App Store](https://apps.apple.com/) / [Google Play](https://play.google.com/store) |
 
-> The Desktop app is a **Cask** (in `Casks/`). The CLI and MCP server are **Formulas** (in `Formula/`).
+> This tap distributes **Desktop** (Cask in `Casks/`), **CLI** and **MCP** (Formulas in `Formula/`).
 > All three are installed separately — pick what you need.
 
 ## Quick Start
