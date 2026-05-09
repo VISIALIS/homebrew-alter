@@ -1,8 +1,8 @@
 cask "alter" do
-  version "1.11.2"
-  sha256 "a1a8eb82fc70957c1f7726ec6ae84d06d9100d04fd3dd5d7a88d0e124a7bf71a"
+  version "1.11.3"
+  sha256 "432043295765418180aa2fabe2f712c85ecbee24c502e9932846cc0a7a288864"
 
-  url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.11.2/Alter-1.11.2-macOS-Notarized.dmg"
+  url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.11.3/Alter-1.11.3-macOS-Notarized.dmg"
   name "Alter"
   desc "Multi-chain EVM address classification desktop app"
   homepage "https://github.com/VISIALIS/phoenix_0"
