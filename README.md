@@ -87,11 +87,11 @@ Configure Claude Code (`.mcp.json`):
 
 ## Current Release
 
-**Version: 1.13.4**
+**Version: 1.13.5**
 
 | Artifact | Platform | Architecture |
 |----------|----------|-------------|
-| `Alter-1.13.4-macOS-Notarized.dmg` | macOS | Universal |
+| `Alter-1.13.5-macOS-Notarized.dmg` | macOS | Universal |
 | `alter-cli-macos-arm64.tar.gz` | macOS | Apple Silicon |
 | `alter-cli-macos-x64.tar.gz` | macOS | Intel |
 | `alter-cli-linux-arm64.tar.gz` | Linux | ARM64 |
@@ -139,7 +139,7 @@ xcode-select --install
 ```bash
 # Verify version directly
 defaults read /Applications/Alter.app/Contents/Info.plist CFBundleShortVersionString
-# Expected: 1.13.4
+# Expected: 1.13.5
 ```
 
 **"Only 1 cask found"**: The tap contains 3 products across 2 directories. Use `brew search alter` after `brew tap VISIALIS/alter` to see all available packages. If your Homebrew installation has issues, try reinstalling it first (see below).
