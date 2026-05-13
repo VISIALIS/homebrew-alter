@@ -91,15 +91,18 @@ Configure Claude Code (`.mcp.json`):
 
 | Artifact | Platform | Architecture |
 |----------|----------|-------------|
-| `Alter-1.13.7-macOS-Notarized.dmg` | macOS | Universal |
-| `alter-cli-macos-arm64.tar.gz` | macOS | Apple Silicon |
-| `alter-cli-macos-x64.tar.gz` | macOS | Intel |
-| `alter-cli-linux-arm64.tar.gz` | Linux | ARM64 |
-| `alter-cli-linux-x64.tar.gz` | Linux | x64 |
-| `alter-mcp-macos-arm64.tar.gz` | macOS | Apple Silicon |
-| `alter-mcp-macos-x64.tar.gz` | macOS | Intel |
-| `alter-mcp-linux-arm64.tar.gz` | Linux | ARM64 |
-| `alter-mcp-linux-x64.tar.gz` | Linux | x64 |
+| `alter-desktop-1.13.7-macos-universal-notarized.dmg` | macOS | Universal |
+| `alter-desktop-1.13.7-windows-x64.zip` | Windows | x64 |
+| `alter-cli-1.13.7-macos-arm64.tar.gz` | macOS | Apple Silicon |
+| `alter-cli-1.13.7-macos-x64.tar.gz` | macOS | Intel |
+| `alter-cli-1.13.7-linux-arm64.tar.gz` | Linux | ARM64 |
+| `alter-cli-1.13.7-linux-x64.tar.gz` | Linux | x64 |
+| `alter-cli-1.13.7-windows-x64.exe` | Windows | x64 |
+| `alter-mcp-1.13.7-macos-arm64.tar.gz` | macOS | Apple Silicon |
+| `alter-mcp-1.13.7-macos-x64.tar.gz` | macOS | Intel |
+| `alter-mcp-1.13.7-linux-arm64.tar.gz` | Linux | ARM64 |
+| `alter-mcp-1.13.7-linux-x64.tar.gz` | Linux | x64 |
+| `alter-mcp-1.13.7-windows-x64.exe` | Windows | x64 |
 
 All artifacts are available on the [Releases page](https://github.com/VISIALIS/homebrew-alter/releases).
 
