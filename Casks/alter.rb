@@ -7,6 +7,8 @@ cask "alter" do
   desc "Multi-chain EVM address classification desktop app"
   homepage "https://github.com/VISIALIS/phoenix_0"
 
+  depends_on :macos
+
   app "Alter.app"
 
   zap trash: [
