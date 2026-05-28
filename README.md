@@ -87,19 +87,19 @@ Configure Claude Code (`.mcp.json`):
 
 ## Current Release
 
-**Version: 1.15.1**
+**Version: 1.15.2**
 
 | Artifact | Platform | Architecture |
 |----------|----------|-------------|
-| `alter-desktop-1.15.1-macos-universal-notarized.dmg` | macOS | Universal |
-| `alter-cli-1.15.1-macos-arm64.tar.gz` | macOS | Apple Silicon |
-| `alter-cli-1.15.1-macos-x64.tar.gz` | macOS | Intel |
-| `alter-cli-1.15.1-linux-arm64.tar.gz` | Linux | ARM64 |
-| `alter-cli-1.15.1-linux-x64.tar.gz` | Linux | x64 |
-| `alter-mcp-1.15.1-macos-arm64.tar.gz` | macOS | Apple Silicon |
-| `alter-mcp-1.15.1-macos-x64.tar.gz` | macOS | Intel |
-| `alter-mcp-1.15.1-linux-arm64.tar.gz` | Linux | ARM64 |
-| `alter-mcp-1.15.1-linux-x64.tar.gz` | Linux | x64 |
+| `alter-desktop-1.15.2-macos-universal-notarized.dmg` | macOS | Universal |
+| `alter-cli-1.15.2-macos-arm64.tar.gz` | macOS | Apple Silicon |
+| `alter-cli-1.15.2-macos-x64.tar.gz` | macOS | Intel |
+| `alter-cli-1.15.2-linux-arm64.tar.gz` | Linux | ARM64 |
+| `alter-cli-1.15.2-linux-x64.tar.gz` | Linux | x64 |
+| `alter-mcp-1.15.2-macos-arm64.tar.gz` | macOS | Apple Silicon |
+| `alter-mcp-1.15.2-macos-x64.tar.gz` | macOS | Intel |
+| `alter-mcp-1.15.2-linux-arm64.tar.gz` | Linux | ARM64 |
+| `alter-mcp-1.15.2-linux-x64.tar.gz` | Linux | x64 |
 
 All artifacts are available on the [Releases page](https://github.com/VISIALIS/homebrew-alter/releases).
 
@@ -139,7 +139,7 @@ xcode-select --install
 ```bash
 # Verify version directly
 defaults read /Applications/Alter.app/Contents/Info.plist CFBundleShortVersionString
-# Expected: 1.15.1
+# Expected: 1.15.2
 ```
 
 **"Only 1 cask found"**: The tap contains 3 products across 2 directories. Use `brew search alter` after `brew tap VISIALIS/alter` to see all available packages. If your Homebrew installation has issues, try reinstalling it first (see below).
