@@ -15,12 +15,6 @@ class AlterMcp < Formula
     end
   end
 
-    on_intel do
-      url "https://github.com/VISIALIS/homebrew-alter/releases/download/v1.17.1/alter-mcp-linux-x64.tar.gz"
-      sha256 ""
-    end
-  end
-
   def install
     bin.install "alter-mcp"
   end
