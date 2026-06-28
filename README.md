@@ -87,7 +87,7 @@ Configure Claude Code (`.mcp.json`):
 
 ## Current Release
 
-**Version: 1.17.0**
+**Version: 1.17.1**
 
 | Artifact | Platform | Architecture |
 |----------|----------|-------------|
@@ -139,7 +139,7 @@ xcode-select --install
 ```bash
 # Verify version directly
 defaults read /Applications/Alter.app/Contents/Info.plist CFBundleShortVersionString
-# Expected: 1.17.0
+# Expected: 1.17.1
 ```
 
 **"Only 1 cask found"**: The tap contains 3 products across 2 directories. Use `brew search alter` after `brew tap VISIALIS/alter` to see all available packages. If your Homebrew installation has issues, try reinstalling it first (see below).
