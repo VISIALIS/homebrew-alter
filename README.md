@@ -9,22 +9,24 @@ Official Homebrew tap for **Alter** — Multi-chain EVM address intelligence.
 | 1 | **Alter Desktop** | macOS application | `brew install --cask alter` |
 | 2 | **alter-cli** | Interactive CLI | `brew install alter-cli` |
 | 3 | **alter-mcp** | MCP server (AI agents) | `brew install alter-mcp` |
-| 4 | **Alter Web** | Web application | [alter.visialis.fr](https://alter.visialis.fr/) |
-| 5 | **Alter Mobile** | Mobile app (iOS/Android) | [App Store](https://apps.apple.com/) / [Google Play](https://play.google.com/store) |
+| 4 | **Alter Web** | Web application | [app.alter-evm.com](https://app.alter-evm.com/) |
+| 5 | **Alter Mobile** | Mobile app (iOS/Android) | Private beta |
 
 > This tap distributes **Desktop** (Cask in `Casks/`), **CLI** and **MCP** (Formulas in `Formula/`).
 > All three are installed separately — pick what you need.
+> Binaries are published on the [VISIALIS/alter Releases page](https://github.com/VISIALIS/alter/releases).
 
 ## Quick Start
 
 ```bash
-# 1. Add the tap
+# 1. Add the tap (and trust it if your Homebrew asks)
 brew tap VISIALIS/alter
+brew trust VISIALIS/alter
 
 # 2. Install what you need
 brew install --cask alter    # Desktop app (macOS only)
-brew install alter-cli       # CLI (macOS + Linux)
-brew install alter-mcp       # MCP server for Claude (macOS + Linux)
+brew install alter-cli       # CLI (macOS)
+brew install alter-mcp       # MCP server for Claude (macOS)
 ```
 
 ## Products
@@ -91,17 +93,13 @@ Configure Claude Code (`.mcp.json`):
 
 | Artifact | Platform | Architecture |
 |----------|----------|-------------|
-| `alter-desktop-1.17.0-macos-universal-notarized.dmg` | macOS | Universal |
-| `alter-cli-1.17.0-macos-arm64.tar.gz` | macOS | Apple Silicon |
-| `alter-cli-1.17.0-macos-x64.tar.gz` | macOS | Intel |
-| `alter-cli-1.17.0-linux-arm64.tar.gz` | Linux | ARM64 |
-| `alter-cli-1.17.0-linux-x64.tar.gz` | Linux | x64 |
-| `alter-mcp-1.17.0-macos-arm64.tar.gz` | macOS | Apple Silicon |
-| `alter-mcp-1.17.0-macos-x64.tar.gz` | macOS | Intel |
-| `alter-mcp-1.17.0-linux-arm64.tar.gz` | Linux | ARM64 |
-| `alter-mcp-1.17.0-linux-x64.tar.gz` | Linux | x64 |
+| `Alter-1.19.0-macOS-Notarized.dmg` | macOS | Universal |
+| `alter-cli-macos-arm64.tar.gz` | macOS | Apple Silicon |
+| `alter-cli-macos-x64.tar.gz` | macOS | Intel |
+| `alter-mcp-macos-arm64.tar.gz` | macOS | Apple Silicon |
+| `alter-mcp-macos-x64.tar.gz` | macOS | Intel |
 
-All artifacts are available on the [Releases page](https://github.com/VISIALIS/homebrew-alter/releases).
+All artifacts are available on the [VISIALIS/alter Releases page](https://github.com/VISIALIS/alter/releases).
 
 ## Update
 
@@ -123,8 +121,11 @@ brew cleanup
 | Product | macOS Intel | macOS ARM64 | Linux x64 | Linux ARM64 |
 |---------|:-----------:|:-----------:|:---------:|:-----------:|
 | Desktop | Yes | Yes | - | - |
-| CLI | Yes | Yes | Yes | Yes |
-| MCP | Yes | Yes | Yes | Yes |
+| CLI | Yes | Yes | Up to 1.18.1 | Up to 1.18.1 |
+| MCP | Yes | Yes | Up to 1.18.1 | Up to 1.18.1 |
+
+> Linux builds are paused as of 1.19.0. The 1.18.1 Linux binaries remain
+> available on the historical [homebrew-alter Releases](https://github.com/VISIALIS/homebrew-alter/releases).
 
 ## Troubleshooting
 
@@ -153,12 +154,6 @@ codesign -dv /Applications/Alter.app 2>&1 | grep Authority
 
 **MCP not visible in Claude**: Restart Claude Desktop (Cmd+Q, reopen).
 
-**Linux PATH issue**:
-```bash
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
-source ~/.bashrc
-```
-
 **Broken system Homebrew (Ruby crash, permission errors)**: If your system Homebrew is corrupted, reinstall it:
 
 ```bash
@@ -167,5 +162,5 @@ source ~/.bashrc
 
 ## Support
 
-- Report issues: [github.com/VISIALIS/homebrew-alter/issues](https://github.com/VISIALIS/homebrew-alter/issues)
-- Project source: [github.com/VISIALIS/phoenix_0](https://github.com/VISIALIS/phoenix_0)
+- Report issues: [github.com/VISIALIS/alter/issues](https://github.com/VISIALIS/alter/issues)
+- Project home: [github.com/VISIALIS/alter](https://github.com/VISIALIS/alter)
