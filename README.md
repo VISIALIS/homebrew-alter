@@ -124,7 +124,7 @@ brew cleanup
 | CLI | Yes | Yes | Up to 1.17.1 | Up to 1.17.1 |
 | MCP | Yes | Yes | Up to 1.17.1 | Up to 1.17.1 |
 
-> Linux builds are paused as of 1.19.0. The 1.17.1 Linux binaries remain
+> Linux builds are paused since 1.18.0. The 1.17.1 Linux binaries remain
 > available on the historical [homebrew-alter Releases](https://github.com/VISIALIS/homebrew-alter/releases).
 
 ## Troubleshooting
