@@ -121,10 +121,10 @@ brew cleanup
 | Product | macOS Intel | macOS ARM64 | Linux x64 | Linux ARM64 |
 |---------|:-----------:|:-----------:|:---------:|:-----------:|
 | Desktop | Yes | Yes | - | - |
-| CLI | Yes | Yes | Up to 1.18.1 | Up to 1.18.1 |
-| MCP | Yes | Yes | Up to 1.18.1 | Up to 1.18.1 |
+| CLI | Yes | Yes | Up to 1.17.1 | Up to 1.17.1 |
+| MCP | Yes | Yes | Up to 1.17.1 | Up to 1.17.1 |
 
-> Linux builds are paused as of 1.19.0. The 1.18.1 Linux binaries remain
+> Linux builds are paused as of 1.19.0. The 1.17.1 Linux binaries remain
 > available on the historical [homebrew-alter Releases](https://github.com/VISIALIS/homebrew-alter/releases).
 
 ## Troubleshooting
