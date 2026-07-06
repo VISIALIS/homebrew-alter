@@ -25,8 +25,8 @@ brew trust VISIALIS/alter
 
 # 2. Install what you need
 brew install --cask alter    # Desktop app (macOS only)
-brew install alter-cli       # CLI (macOS)
-brew install alter-mcp       # MCP server for Claude (macOS)
+brew install alter-cli       # CLI (macOS + Linux)
+brew install alter-mcp       # MCP server for Claude (macOS + Linux)
 ```
 
 ## Products
@@ -98,8 +98,15 @@ Configure Claude Code (`.mcp.json`):
 | `alter-cli-macos-x64.tar.gz` | macOS | Intel |
 | `alter-mcp-macos-arm64.tar.gz` | macOS | Apple Silicon |
 | `alter-mcp-macos-x64.tar.gz` | macOS | Intel |
+| `alter-cli-linux-{x64,arm64}.tar.gz` | Linux | x64 / ARM64 |
+| `alter-mcp-linux-{x64,arm64}.tar.gz` | Linux | x64 / ARM64 |
+| `alter-1.19.0-linux.tar.gz` | Linux (desktop) | x64 |
+| `alter-cli-windows-{x64,arm64}.exe` | Windows | x64 / ARM64 |
+| `alter-mcp-windows-{x64,arm64}.exe` | Windows | x64 / ARM64 |
+| `Alter-1.19.0-windows.zip` / `Alter-1.19.0-windows-arm64.zip` | Windows (desktop) | x64 / ARM64 |
 
 All artifacts are available on the [VISIALIS/alter Releases page](https://github.com/VISIALIS/alter/releases).
+Windows binaries are direct downloads (no Homebrew on Windows).
 
 ## Update
 
@@ -118,14 +125,13 @@ brew cleanup
 
 ## Platform Support
 
-| Product | macOS Intel | macOS ARM64 | Linux x64 | Linux ARM64 |
-|---------|:-----------:|:-----------:|:---------:|:-----------:|
-| Desktop | Yes | Yes | - | - |
-| CLI | Yes | Yes | Up to 1.17.1 | Up to 1.17.1 |
-| MCP | Yes | Yes | Up to 1.17.1 | Up to 1.17.1 |
+| Product | macOS Intel | macOS ARM64 | Linux x64 | Linux ARM64 | Windows x64 | Windows ARM64 |
+|---------|:-----------:|:-----------:|:---------:|:-----------:|:-----------:|:-------------:|
+| Desktop | Yes | Yes | Yes | - | Yes* | Yes* |
+| CLI | Yes | Yes | Yes | Yes | Yes* | Yes* |
+| MCP | Yes | Yes | Yes | Yes | Yes* | Yes* |
 
-> Linux builds are paused since 1.18.0. The 1.17.1 Linux binaries remain
-> available on the historical [homebrew-alter Releases](https://github.com/VISIALIS/homebrew-alter/releases).
+> \* Windows: direct download from the [Releases page](https://github.com/VISIALIS/alter/releases) (no Homebrew on Windows).
 
 ## Troubleshooting
 
