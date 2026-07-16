@@ -1,28 +1,28 @@
 class AlterMcp < Formula
   desc "MCP server for Claude Desktop/Code - multi-chain EVM address classification"
   homepage "https://github.com/VISIALIS/phoenix_0"
-  version "1.20.0"
+  version "1.21.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/VISIALIS/alter/releases/download/v1.20.0/alter-mcp-macos-arm64.tar.gz"
-      sha256 "1b68bf6e852ddd4c35a7bb1f9cdded19f32d7e79f528cd80124a204decc1c2bd"
+      url "https://github.com/VISIALIS/alter/releases/download/v1.21.0/alter-mcp-macos-arm64.tar.gz"
+      sha256 "5a87c6eda09bb0307830557efabfc6d8bc5d913f148fc2c22ebe464762aaa1e0"
     end
     on_intel do
-      url "https://github.com/VISIALIS/alter/releases/download/v1.20.0/alter-mcp-macos-x64.tar.gz"
-      sha256 "b0d42566d838fca9c8062e19d42e065335aa9cc28568c53c968ceee6d0ac8057"
+      url "https://github.com/VISIALIS/alter/releases/download/v1.21.0/alter-mcp-macos-x64.tar.gz"
+      sha256 "85ff56a4418602c1ae6cd657d671bc729bacc5af49e44ed2a492f8c7bf050e73"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/VISIALIS/alter/releases/download/v1.20.0/alter-mcp-linux-arm64.tar.gz"
-      sha256 "6dc5762a30469bc05c9d47dfc98d63363f02b33ecd104e312470d9da73855697"
+      url "https://github.com/VISIALIS/alter/releases/download/v1.21.0/alter-mcp-linux-arm64.tar.gz"
+      sha256 "d00747526f4edc767a17ecd28cf7d7a26fe51971c16df160e6c269987d6bfa7b"
     end
     on_intel do
-      url "https://github.com/VISIALIS/alter/releases/download/v1.20.0/alter-mcp-linux-x64.tar.gz"
-      sha256 "8d000143cb643a70ef216387ee7fb09400f6552985c5b5c9c084a388122b7353"
+      url "https://github.com/VISIALIS/alter/releases/download/v1.21.0/alter-mcp-linux-x64.tar.gz"
+      sha256 "9c7cd4749cd01e8df95928241ad31ed5c73cdd9cd78bc77b8f4fa2cb50ed2981"
     end
   end
 
