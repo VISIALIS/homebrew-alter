@@ -7,11 +7,11 @@ class AlterMcp < Formula
   on_macos do
     on_arm do
       url "https://github.com/VISIALIS/alter/releases/download/v1.30.0/alter-mcp-macos-arm64.tar.gz"
-      sha256 ""
+      sha256 "2fb9b81ef5143fa65e4a5708fd704bc5645f546272bf35d7ecc49d6111e57015"
     end
     on_intel do
       url "https://github.com/VISIALIS/alter/releases/download/v1.30.0/alter-mcp-macos-x64.tar.gz"
-      sha256 ""
+      sha256 "ede9c3c425d22bda742ad5db316b5cce76c211c3d5a7f6e8c2f4bc06a3a10767"
     end
   end
 

@@ -7,11 +7,11 @@ class AlterCli < Formula
   on_macos do
     on_arm do
       url "https://github.com/VISIALIS/alter/releases/download/v1.30.0/alter-cli-macos-arm64.tar.gz"
-      sha256 ""
+      sha256 "cac202741829e003fdf81ee0194203cac53ebee9fa9e5cee8e3f28f72b34e787"
     end
     on_intel do
       url "https://github.com/VISIALIS/alter/releases/download/v1.30.0/alter-cli-macos-x64.tar.gz"
-      sha256 ""
+      sha256 "4d26ac7c17b9c7093c3af84052a61f6135e5ab015ead8e65b5034c9a04d8a38a"
     end
   end
 
