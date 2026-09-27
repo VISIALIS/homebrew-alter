@@ -18,11 +18,11 @@ class AlterCli < Formula
   on_linux do
     on_arm do
       url "https://github.com/VISIALIS/alter/releases/download/v1.30.0/alter-cli-linux-arm64.tar.gz"
-      sha256 "f1bed16d379f1dce68a23207bae04773797d7c0e09d654e54ea753d022f3f8d8"
+      sha256 "a048732a53a72bbb656eaf7c3593a3d14b493e90c24e4cea651c997df03acf9c"
     end
     on_intel do
       url "https://github.com/VISIALIS/alter/releases/download/v1.30.0/alter-cli-linux-x64.tar.gz"
-      sha256 "498c4ffc503ab8c0f18e45c0f0f02307a2f95d45aede2f47983ec784902407b7"
+      sha256 "ed58477e320b0ee1a11d3aa5c1827610fe390e56f9663234ac6f45c65beebc4f"
     end
   end
 

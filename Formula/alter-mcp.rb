@@ -18,11 +18,11 @@ class AlterMcp < Formula
   on_linux do
     on_arm do
       url "https://github.com/VISIALIS/alter/releases/download/v1.30.0/alter-mcp-linux-arm64.tar.gz"
-      sha256 "eda96b113157b0c6ce4e518eec7f98239f9a41e3a802612685e8c0fce3e87110"
+      sha256 "3504751082d59475d789f4e669cc0024556c1f6b80c33145195dfc74e88923cf"
     end
     on_intel do
       url "https://github.com/VISIALIS/alter/releases/download/v1.30.0/alter-mcp-linux-x64.tar.gz"
-      sha256 "83e781a00dc1b87f7b9a9d532907310bbbc7f1250ef7bcf0a7cbf31274eb0a2a"
+      sha256 "428688fc2aca57ff5c57d2cfc497b587f6e0e5331355dc3421d1c219bf6ee315"
     end
   end
 
