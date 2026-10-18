@@ -1,28 +1,28 @@
 class AlterCli < Formula
   desc "CLI tool for multi-chain EVM address classification"
   homepage "https://github.com/VISIALIS/phoenix_0"
-  version "1.32.0"
+  version "1.32.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/VISIALIS/alter/releases/download/v1.32.0/alter-cli-macos-arm64.tar.gz"
-      sha256 "73e16e01dda30526cb1154643fb0a8dd7f09779432b7a1af279b3f7dbf53e572"
+      url "https://github.com/VISIALIS/alter/releases/download/v1.32.1/alter-cli-macos-arm64.tar.gz"
+      sha256 "053efd762d33533cdf74ed69d905186412f4857186d08d0733f705056d487c3d"
     end
     on_intel do
-      url "https://github.com/VISIALIS/alter/releases/download/v1.32.0/alter-cli-macos-x64.tar.gz"
-      sha256 "6d52be5214cb3fdd045505b53867548db6e7d4af42c1e9ebd66327b5b3feec12"
+      url "https://github.com/VISIALIS/alter/releases/download/v1.32.1/alter-cli-macos-x64.tar.gz"
+      sha256 "e848f5f554736a6824a62147e368e163767185e72513eba5dee079ba94a4699d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/VISIALIS/alter/releases/download/v1.32.0/alter-cli-linux-arm64.tar.gz"
-      sha256 "8065f820b1e60ca99062a12dd74e0b084f4a6e2ceffe3bbffc50063e1aa90be7"
+      url "https://github.com/VISIALIS/alter/releases/download/v1.32.1/alter-cli-linux-arm64.tar.gz"
+      sha256 "de8a8eb2958e2aa8b62abc6f1246272543f9ba65f2cd5f2f8b3fb98aaaefd14b"
     end
     on_intel do
-      url "https://github.com/VISIALIS/alter/releases/download/v1.32.0/alter-cli-linux-x64.tar.gz"
-      sha256 "cd076a140c2c4a59825a8e19dd2c0bb5274739bbfe0512d0fdb91a0ebc1c92e3"
+      url "https://github.com/VISIALIS/alter/releases/download/v1.32.1/alter-cli-linux-x64.tar.gz"
+      sha256 "6ed0cbca0b4d4c5a153cc257b0daba90eb9e3ca0203f5b1e70326b769c4c2877"
     end
   end
 
