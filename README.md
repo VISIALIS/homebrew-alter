@@ -10,7 +10,7 @@ Official Homebrew tap for **Alter** — Multi-chain EVM address intelligence.
 | 2 | **alter-cli** | Interactive CLI | `brew install alter-cli` |
 | 3 | **alter-mcp** | MCP server (AI agents) | `brew install alter-mcp` |
 | 4 | **Alter Web** | Web application | [app.alter-evm.com](https://app.alter-evm.com/) |
-| 5 | **Alter Mobile** | Mobile app (iOS/Android) | Private beta |
+| 5 | **Alter Mobile** | Mobile app (iOS/Android) | [App Store](https://apps.apple.com/) / [Google Play](https://play.google.com/store) |
 
 > This tap distributes **Desktop** (Cask in `Casks/`), **CLI** and **MCP** (Formulas in `Formula/`).
 > All three are installed separately — pick what you need.
