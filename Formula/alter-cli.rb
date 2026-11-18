@@ -4,6 +4,14 @@ class AlterCli < Formula
   version "1.39.0"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/VISIALIS/alter/releases/download/v1.39.0"
+    sha256                               arm64_tahoe:   "313239a343788d16fbd5e3ce1e9847bf35d95ab5c6204d98bb81c5b99697ad2c"
+    sha256                               arm64_sequoia: "a742447eaaee042dd395abec9e24491be393899eb24ff1840b1e69cead5aed92"
+    sha256 cellar: :any_skip_relocation, tahoe:         "0237af351c455d042f79751199cdeeb96789138b6ffe59e962391ffda4e45404"
+    sha256 cellar: :any_skip_relocation, sequoia:       "01fbce9124304a2c6c212894be289c725204baa289a58b801cdfd34f40b8a5f5"
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/VISIALIS/alter/releases/download/v1.39.0/alter-cli-macos-arm64.tar.gz"

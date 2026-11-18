@@ -4,6 +4,14 @@ class AlterMcp < Formula
   version "1.39.0"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/VISIALIS/alter/releases/download/v1.39.0"
+    sha256                               arm64_tahoe:   "29d22eb4d351fc1afd6ab9f0176799954b11a811bc0985e2e735c57fb62eeb41"
+    sha256                               arm64_sequoia: "4ca8af7e0e3fe419446d09f68e9486e0b3de9f5bfc9b8c17d0051ea36d1e2d38"
+    sha256 cellar: :any_skip_relocation, tahoe:         "6e05159d99fb529f2b509a7257a0988dae83283ca6a3c5b77e830404d17a6a2b"
+    sha256 cellar: :any_skip_relocation, sequoia:       "743fe7a9e843ba063df46783b323c6df7ce48a88823f0ea747671a20203e3dcd"
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/VISIALIS/alter/releases/download/v1.39.0/alter-mcp-macos-arm64.tar.gz"
