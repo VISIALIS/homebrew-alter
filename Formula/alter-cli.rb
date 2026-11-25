@@ -1,36 +1,17 @@
 class AlterCli < Formula
   desc "CLI tool for multi-chain EVM address classification"
   homepage "https://github.com/VISIALIS/phoenix_0"
-  version "1.39.0"
+  version "1.40.0"
   license "MIT"
-
-  bottle do
-    root_url "https://github.com/VISIALIS/alter/releases/download/v1.39.0"
-    sha256                               arm64_tahoe:   "313239a343788d16fbd5e3ce1e9847bf35d95ab5c6204d98bb81c5b99697ad2c"
-    sha256                               arm64_sequoia: "a742447eaaee042dd395abec9e24491be393899eb24ff1840b1e69cead5aed92"
-    sha256 cellar: :any_skip_relocation, tahoe:         "0237af351c455d042f79751199cdeeb96789138b6ffe59e962391ffda4e45404"
-    sha256 cellar: :any_skip_relocation, sequoia:       "01fbce9124304a2c6c212894be289c725204baa289a58b801cdfd34f40b8a5f5"
-  end
 
   on_macos do
     on_arm do
-      url "https://github.com/VISIALIS/alter/releases/download/v1.39.0/alter-cli-macos-arm64.tar.gz"
-      sha256 "58a42adc54afdbc4bdc25eb3f7582a08e7b08eb5651e66bdfa9fd1a5f6b91c96"
+      url "https://github.com/VISIALIS/alter/releases/download/v1.40.0/alter-cli-macos-arm64.tar.gz"
+      sha256 "ceb573f40d797f8ad7697ad22b7be4c7d683acd70d7c0232501460f408f8756b"
     end
     on_intel do
-      url "https://github.com/VISIALIS/alter/releases/download/v1.39.0/alter-cli-macos-x64.tar.gz"
-      sha256 "d0155f23c5f428708127c826dddc493526724411c8e712b4f58c0bb6c88a5679"
-    end
-  end
-
-  on_linux do
-    on_arm do
-      url "https://github.com/VISIALIS/alter/releases/download/v1.39.0/alter-cli-linux-arm64.tar.gz"
-      sha256 "e7b15054d8897c439ee44b13a2da0d760b62bece4baaea588dd985be65857020"
-    end
-    on_intel do
-      url "https://github.com/VISIALIS/alter/releases/download/v1.39.0/alter-cli-linux-x64.tar.gz"
-      sha256 "b111ab54a31b2413e7eb81012d39f48269cd1c01f0e9c20dff407f136e72ed41"
+      url "https://github.com/VISIALIS/alter/releases/download/v1.40.0/alter-cli-macos-x64.tar.gz"
+      sha256 "02f94797e8c077973d1a6f10b67e0438b653d71defdfcaf8452c9011180b8284"
     end
   end
 
